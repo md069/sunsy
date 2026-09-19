@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tmin Support</title>
+<meta name="description" content="Contact Tmin support and find answers to common questions about Tmin: Jet Lag Planner.">
+<meta name="theme-color" content="#DCE9F5">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="page-head">
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="../"><img src="../assets/favicon.svg" alt="" width="28" height="28">Tmin</a>
+      <nav aria-label="Site"><a href="./" aria-current="page">Support</a><a href="../privacy/">Privacy</a></nav>
+    </div>
+    <div class="intro">
+      <h1>Support</h1>
+      <p>Questions, bugs or a time that looks wrong? Write to us. A real person reads every email.</p>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="doc">
+    <div class="contact">
+      <div><strong>Email</strong><a href="mailto:tmin@marcado.io?subject=Tmin%20support">tmin@marcado.io</a></div>
+      <span class="meta">Please include your iPhone model and iOS version. For a trip, the two cities and your arrival time help.</span>
+    </div>
+
+    <h2 id="faq">Frequently asked questions</h2>
+
+    <details id="low-point" open>
+      <summary>How does Tmin work out my low point?</summary>
+      <p>Your low point is the time your body temperature bottoms out during sleep, also called the temperature minimum. Tmin never measures it. It takes your usual wake time and subtracts two hours, following published research (Lack et al., 2009). Wake at 07:00 and your low point is about 05:00.</p>
+      <p>Everything else is arithmetic from that one number. Bright light in the hours after your low point moves your clock earlier, which you want when travelling east. Bright light in the hours before it moves your clock later, which you want when travelling west. To change your wake time, open Settings in the app.</p>
+    </details>
+
+    <details id="assumptions">
+      <summary>Why are some parts of my trip plan marked “Assumption”?</summary>
+      <p>The published rule Tmin follows covers your first arrival day: it anchors the plan to your home low point, converted to local time. Two rules go further than that source, and the app labels both wherever they appear.</p>
+      <ol>
+        <li><strong>The daily shift.</strong> On arrival days 2 and 3 the anchor moves toward your low point in local time by 1 hour a day for eastward plans and 1.5 hours a day for westward plans. These rates come from Eastman and Burgess (2009).</li>
+        <li><strong>Very long eastward trips.</strong> If you fly more than nine hours east, Tmin plans the shift as a westward delay instead, because moving your clock later is easier than moving it that far earlier.</li>
+      </ol>
+      <p>Tmin computes times. It gives no medical advice. If you have a sleep condition, talk to your doctor.</p>
+    </details>
+
+    <details id="notifications">
+      <summary>My reminders aren’t arriving. What should I check?</summary>
+      <ol>
+        <li>In the iPhone Settings app, go to Notifications, then Tmin, and make sure Allow Notifications is on.</li>
+        <li>In Tmin, open Settings, then Reminders, and turn on the windows you want. Daily reminders are off until you accept them. Trip block reminders are on by default.</li>
+        <li>Check Focus and Do Not Disturb. They can hold reminders back until the Focus ends.</li>
+        <li>Open Tmin once. It schedules the next seven days of reminders each time you open it, so after a week or more without opening the app, or after changing time zones, one launch brings them up to date.</li>
+      </ol>
+      <p>The dim lights reminder is silent on purpose, so it won’t make a sound in the hour before bed.</p>
+    </details>
+
+    <details id="delete">
+      <summary>How do I delete my data?</summary>
+      <p>In Tmin, open Settings and tap <strong>Delete all data</strong>. Your wake time, trips and history are removed from your phone. Deleting the app does the same.</p>
+      <p>There is nothing to delete anywhere else. Tmin has no account and no server, and the developer never receives your data. If your iPhone backs up to iCloud, an older backup may still hold a copy until the backup is replaced, as with any app.</p>
+    </details>
+
+    <details id="internet">
+      <summary>Does Tmin need an internet connection?</summary>
+      <p>Only for two things:</p>
+      <ul>
+        <li><strong>City search</strong> when you plan a trip, which uses Apple Maps.</li>
+        <li><strong>Local weather</strong>, which comes from Apple Weather.</li>
+      </ul>
+      <p>Everything else works offline, including sunrise and sunset times, which Tmin computes on your phone. Plan your trip while you still have a connection and the whole plan works in the air and on arrival.</p>
+    </details>
+
+    <p class="meta" style="margin-top:32px">Still stuck? Email <a href="mailto:tmin@marcado.io">tmin@marcado.io</a>. Privacy questions are covered in the <a href="../privacy/">privacy policy</a>.</p>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Marcus Domann</span>
+    <nav aria-label="Footer"><a href="../">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="mailto:tmin@marcado.io">tmin@marcado.io</a></nav>
+  </div>
+</footer>
+</body>
+</html>
